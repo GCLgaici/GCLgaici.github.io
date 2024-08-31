@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高新技能学考</title>
+    <style>
+        /* 基础样式 */
+        body {
+            background-color: #ffffff;
+            color: #333333;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 1rem;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333333;
+        }
+        .nav-link {
+            color: #333333 !important;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+            padding: 0.5rem 1rem;
+        }
+        .nav-link:hover {
+            color: #007bff !important;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+            padding: 0.5rem 1rem;
+            font-size: 1.1rem;
+            border-radius: 0.25rem;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+        .jumbotron {
+            background-color: #f8f9fa;
+            padding: 4rem 2rem;
+            border-radius: 0.3rem;
+            margin-bottom: 2rem;
+        }
+        .jumbotron h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #333333;
+        }
+        .jumbotron p {
+            font-size: 1.25rem;
+            color: #6c757d;
+        }
+        .container {
+            padding: 0 15px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .navbar-toggler {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.25rem 0.75rem;
+            font-size: 1.25rem;
+            line-height: 1;
+            border-radius: 0.25rem;
+        }
+        .navbar-toggler-icon {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: middle;
+            content: "";
+            background: no-repeat center center;
+            background-size: 100% 100%;
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        .collapse {
+            display: none;
+        }
+        .collapse.show {
+            display: block;
+        }
+        @media (max-width: 991.98px) {
+            .navbar-collapse {
+                flex-basis: 100%;
+                flex-grow: 1;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">高新技能学考</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">课程</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">考试</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">用户中心</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h1 class="display-4">欢迎来到高新技能学考</h1>
+            <p class="lead">这里是你提升技能、挑战自我的地方。</p>
+            <hr class="my-4">
+            <p>立即开始你的学习之旅！</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">开始学习</a>
+        </div>
+    </div>
+    <script>
+        // 简单的JavaScript代码来处理导航栏的折叠
+        document.querySelector('.navbar-toggler').addEventListener('click', function () {
+            document.getElementById('navbarNav').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
